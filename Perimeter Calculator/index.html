@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter calculator</title>
+</head>
+<body style="background-color: pink;">
+    <h1 style="text-align: center; color: brown; font-family: cursive;">Perimeter Calculator</h1>
+    <script>
+        var choice=prompt("Welcome to Perimeter calculator😁 \nPlease enter your choice❓: \n1.Rectangle \n2.Square \n3.Circle ")
+        if (choice=='1'){
+            var length=parseFloat(prompt("Enter the Length of the Rectangle"));
+            var bredth=parseFloat(prompt("Enter the Bredth of the Rectangle"));
+            var perimeter= 2*length*bredth;
+            alert("The Perimeter of the Rectangle is " +perimeter);
+        }
+        if (choice=='2'){
+            var length=parseFloat(prompt("What is the Length of the Square"));
+            var perimeter=4*length;
+            alert("The Perimeter of the Square is " +perimeter)
+        }
+        if (choice=='3'){
+            var r=parseFloat(prompt("Enter the Radius of the Circle"));
+            var perimeter=2*22/7*r;
+            alert("The Perimeter of the Circle is " +perimeter)
+        }
+    </script>
+</body>
+</html>
